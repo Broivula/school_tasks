@@ -80,6 +80,7 @@ aside{
 }
 .page-layout{
     display: flex;
+    flex-wrap: wrap;
 }
 
 figure{
@@ -143,9 +144,12 @@ header h1 {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        max-width: 60em;
-        margin: auto;
+    main{
+        width: 100%;
+
+    }
+    aside{
+        width: 100%;
     }
 
 }
