@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation JavaScript</h1>
+
+    <form novalidate>
+        First name:<br>
+        <input type="text" name="Firstname" autofocus required id="first-name" class="validation"><br>
+        Last name:<br>
+        <input type="text" name="Lastname" required id="last-name" class="validation"><br>
+        Email:<br>
+        <input type="email" name="Email" required id="email" class="validation"><br>
+        Phone:<br>
+        <input type="tel" placeholder="+358400123123" pattern="[\+][3]{1}[5]{1}[8]{1}[0-9]{9}" name="Phone" id="phone" class="validation"><br>
+        Address:<br>
+        <input type="text" name="Address" id="address" class="validation"><br>
+        ZIP:<br>
+        <input type="text" name="ZIP" id="zip" class="validation" maxlength="5" minlength="5"><br>
+        Password:<br>
+        <input type="password" required name="Password" id="password" class="validation"><br>
+        Submit:<br>
+        <input type="submit" name="Send" id="submit" class="validation"><br>
+
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
